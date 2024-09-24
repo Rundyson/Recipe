@@ -499,38 +499,48 @@ textarea {
 /* ABOUT THERECIPE */
 .aboutRecipe {
   padding: 5rem 0;
-  background-color: var(--border);
-  height: 50rem;
 }
-.aboutRecipe__wrapper {
-  display: flex;
+.aboutRecipe{
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  align-items: center;
 }
-.aboutRecipe h2 {
+.aboutRecipe h2{
   font-size: var(--h2);
-  padding-top: 2rem;
-  text-align: left;
   opacity: 70%;
   font-family: var(--font-secondary);
   padding-bottom: 3rem;
 }
+.aboutRecipe__img{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  text-align: center;
+}
 .aboutRecipe img {
+  height: 100rem;
   width: 100%;
-  height: 70rem;
+  margin-bottom: 5rem;
+  position: relative;
   object-fit: cover;
+}
+.aboutRecipe::before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  background-color: var(--border);
+  width: 200rem;
+  height: 100%;
+
 }
 /* THE RECIPE.COM */
 .theRecipe {
   padding: 5rem 0;
   background-color: var(--light);
-  padding-top: 50rem;
 }
 .theRecipe__wrapper {
   display: grid;
-  grid-template-columns: 20fr 20fr ;
+  grid-template-columns: 1fr 1fr ;
   gap: 3rem;
 }
 .theRecipe__details h2 {
